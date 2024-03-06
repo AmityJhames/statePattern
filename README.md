@@ -8,7 +8,7 @@ A bank needs to manage different states of customer accounts, including active, 
 
 Currently, the system relies on conditional statements within the Account class to check the account state and determine valid actions. This approach becomes cumbersome and error-prone as the number of states and their associated logic grows.
 
-## Implement the State pattern to improve code maintainability and flexibility:
+### Implement the State pattern to improve code maintainability and flexibility:
 * **Define Account States**: Create separate classes representing different account states: *ActiveState*, *SuspendedState*, and *ClosedState*.
 * **Implement State Interface**: Define an interface AccountState with methods for common actions like *deposit*, *withdraw*, *activate*, *suspend*, and *close*.
 * **Implement State Behaviors**: Each concrete state class implements the *AccountState interface*, providing specific behavior for its respective state. For example, the *ActiveState* class would allow deposits and withdrawals, while the *ClosedState* wouldn't allow any transactions.
@@ -18,7 +18,7 @@ Currently, the system relies on conditional statements within the Account class 
   * Introduce a reference to the current AccountState object.
   * Delegate actions like deposit, withdraw, activate, suspend, and close to the current state object through its corresponding methods.
  
- ## Logic:
+ ### Logic:
 
 If the account is active
     You can either suspend it or close it.
