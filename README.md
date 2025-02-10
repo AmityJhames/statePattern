@@ -30,3 +30,4 @@ If the account is closed
       No deposits and withdrawals allowed.
 
 ### UML Diagram      
+![image](https://github.com/user-attachments/assets/dcdafe61-f915-44a4-8101-9d2f43267cad)
